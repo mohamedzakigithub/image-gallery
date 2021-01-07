@@ -1,0 +1,129 @@
+@import "./modal.scss";
+
+body,
+html {
+  font-family: "Open Sans", sans-serif;
+  background-color: #32aeba;
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  padding: 20px;
+  text-align: center;
+  h1 {
+    font-size: 72px;
+    margin: 0px;
+    padding: 0;
+    color: white;
+  }
+}
+
+.thumbnailsDiv {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  img {
+    position: absolute;
+    width: 274%;
+    height: auto;
+  }
+}
+
+.overlay {
+  cursor: zoom-in;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: black;
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    pointer-events: none;
+  }
+}
+
+.imageDiv {
+  position: relative;
+  margin: 20px;
+  width: 36.5vw;
+  height: 36.5vw;
+  &:hover .overlay {
+    opacity: 0.7;
+  }
+}
+
+.imageDiv1 {
+  clip-path: circle(50%);
+  img {
+    bottom: 0%;
+    left: -90%;
+  }
+}
+
+.imageDiv2 {
+  clip-path: inset(21.5% 0% 21.5% 0%);
+  img {
+    bottom: -60%;
+    left: -90%;
+  }
+}
+
+.imageDiv3 {
+  clip-path: inset(0px 0px 0px 0px);
+  img {
+    bottom: -10%;
+    left: -90%;
+  }
+}
+
+.imageDiv4 {
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  img {
+    bottom: -5%;
+    left: -60%;
+  }
+}
+
+@media (max-width: 576px) {
+  .imageDiv {
+    position: relative;
+    margin: 5px;
+    width: 80vw;
+    height: 80vw;
+    &:hover .overlay {
+      opacity: 0.7;
+    }
+  }
+  .header {
+    padding: 20px;
+    text-align: center;
+    h1 {
+      font-size: 24px;
+      margin: 0px;
+      padding: 0;
+      color: white;
+    }
+  }
+}
