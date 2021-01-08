@@ -25,8 +25,8 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: "New Zealand",
-      template: path.resolve(__dirname, "./src/index.html"), // template file
-      filename: "index.html", // output file
+      template: path.resolve(__dirname, "./src/index.html"),
+      filename: "index.html", //
     }),
     new CleanWebpackPlugin(),
     new CopyWebpackPlugin({
@@ -34,7 +34,7 @@ module.exports = {
     }),
     new ImageminPlugin({
       test: /\.(jpe?g|png|gif|svg)$/i,
-      plugins: [imageminMozjpeg({ quality: 20 })],
+      plugins: [imageminMozjpeg({ quality: 30 })],
     }),
   ],
   module: {

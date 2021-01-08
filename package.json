@@ -3,10 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {
-    "imagemin-mozjpeg": "^9.0.0",
-    "imagemin-webpack-plugin": "^2.4.2"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/plugin-proposal-class-properties": "^7.12.1",
@@ -22,7 +19,9 @@
     "style-loader": "^2.0.0",
     "webpack": "^5.11.1",
     "webpack-cli": "^4.3.1",
-    "webpack-dev-server": "^3.11.1"
+    "webpack-dev-server": "^3.11.1",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-webpack-plugin": "^2.4.2"
   },
   "scripts": {
     "start": "webpack serve",
