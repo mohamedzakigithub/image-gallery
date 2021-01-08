@@ -9,9 +9,14 @@ This repository is for a simple responsive image gallery design developed using 
 - Modal containing the whole image. The modal can be closed by clicking on the close icon on top right of the modal or clicking on the backdrop.
 - simple client side routing. The pag checks for the search query in the url and open the image modal as required. This is to support browser functionality such as refresh, back and forward navigation.
 
+- [Demo](#Demo)
 - [Deployed app URL](#Deployed-app-URL)
 - [build process](#build-process)
 - [Installation Guide](#Installation-Guide)
+
+## Demo
+
+<img src="demo.gif" style="width:70%"/>
 
 ## Deployed app URL
 
